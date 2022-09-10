@@ -139,14 +139,12 @@ public class Main {
         int age = 25;
         int salary = 30_000;
         double wantedSum = 330_000;
-        //double wantedSumTotal = wantedSum + wantedSum * baseRate;
         double baseRate = 0.1;
         if (age < 23) {
         baseRate = baseRate + 0.01;
         } else if (age < 30 && age >= 23) {
         baseRate = baseRate + 0.005;
         }
-        //double wantedSumTotal = wantedSum + wantedSum * baseRate;
         if (salary > 80_000) {
             baseRate = baseRate - 0.007;
 
