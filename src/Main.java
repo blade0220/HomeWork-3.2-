@@ -23,34 +23,36 @@ public class Main {
 
     public static void task_2() {
         System.out.println("Задача2");
-        int clientOS = 0;
+        int clientOS = 1;
         int clientDeviceYear = 2016;
-        if (clientDeviceYear < 2015) {
-            if (clientOS == 0) {
+        if (clientOS == 0) {
+            if (clientDeviceYear < 2015) {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else {
-                System.out.println("Установите облегченную версию приложения для OS Android по ссылке");
-                
-            }
-        }
-        if (clientDeviceYear >= 2015){
-            if (clientOS == 0) {
-                System.out.println("Установите версию приложения для iOS по ссылке");
             } else {
-                System.out.println("Установите версию приложения для OS Android по ссылке");
+                System.out.println("Установите версию приложения для iOS по ссылке");
             }
-        }
+
+        } else {
+                if (clientDeviceYear < 2015) {
+                    System.out.println("Установите облегченную версию приложения для OS Android по ссылке");
+                } else {
+                    //System.out.println("Установите версию приложения для iOS по ссылке");
+                    System.out.println("Установите версию приложения для OS Android по ссылке");
+
+                }
+            }
+
     }
 
-    public static void task_3() {
+   public static void task_3() {
         System.out.println("Задача3");
 
         int years = 2021;
-        int a = years % 4;
-        if (a == 0) {
-            System.out.println("Год является высокосным");
+        //int a = years % 4;
+        if (years % 4 == 0 && years % 100 != 0 || years % 400 == 0) {
+            System.out.println(years + " является высокосным");
         } else {
-            System.out.println("Год не высокосный");
+            System.out.println(years + " не высокосный");
         }
     }
 
@@ -67,44 +69,45 @@ public class Main {
 
     public static void task_5() {
         System.out.println("Задача5");
-        int monthNumber = 13;
+        int monthNumber = 7;
         switch (monthNumber){
+            case 12:
             case 1:
-            System.out.println("Зима");
-            break;
+            //System.out.println("Зима");
+            //break;
             case 2:
                 System.out.println("Зима");
                 break;
             case 3:
-                System.out.println("Весна");
-                break;
+                //System.out.println("Весна");
+                //break;
             case 4:
-                System.out.println("Весна");
-                break;
+                //System.out.println("Весна");
+                //break;
             case 5:
                 System.out.println("Весна");
                 break;
             case 6:
-                System.out.println("Лето");
-                break;
+                //System.out.println("Лето");
+                //break;
             case 7:
-                System.out.println("Лето");
-                break;
+                //System.out.println("Лето");
+                //break;
             case 8:
                 System.out.println("Лето");
                 break;
             case 9:
-                System.out.println("Осень");
-                break;
+                //System.out.println("Осень");
+                //break;
             case 10:
-                System.out.println("Осень");
-                break;
+                //System.out.println("Осень");
+                //break;
             case 11:
                 System.out.println("Осень");
                 break;
-            case 12:
-                System.out.println("Зима");
-                break;
+           // case 12:
+             //   System.out.println("Зима");
+               // break;
             default:
                 System.out.println("Такого месяца не существует");
         }
@@ -131,7 +134,6 @@ public class Main {
         System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + limit + " рублей");
 
     }
-
 
     public static void task_7() {
         //Задача 7
